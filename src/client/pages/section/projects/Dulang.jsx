@@ -14,10 +14,12 @@ const Dulang = () => {
       <DulangModal />
 
       <div className="center-align">
-        <h4 className="white-text">Dulang Restaurant Management System</h4>
+        <h4 className="white-text" data-aos="flip-down">
+          Dulang Restaurant Management System
+        </h4>
 
         <a className="modal-trigger" href="#dulangModal">
-          <div className="img dulang"></div>
+          <div className="img dulang" data-aos="zoom-in-down"></div>
         </a>
       </div>
     </>
