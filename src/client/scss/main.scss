@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+$orange: #f57c00;
+$orange_dark: #e65100;
+$grey: #555555;
+$blue: #1976d2;
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $grey;
+}
+
+.mypic {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid $orange;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+
+.myname {
+  margin: 0;
+}
+
+.mylogo {
+  height: 50px;
+  width: 100px;
+  margin: 5px auto;
+}
+
+.laptopLogo {
+  height: 150px;
+  width: 150px;
+}
+
+.blobLogo {
+  width: 600px;
+  height: 600px;
+}
+
+.orange-color {
+  color: $orange;
+}
+
+.carousel {
+  cursor: pointer;
+}
+
+.cardImage {
+  height: 400px;
+  width: 200px;
+}
+.modalImage {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.img {
+  margin: 2rem 0;
+  height: 400px;
+  width: 600px;
+  box-shadow: 0 10px 10px rgba(black, 0.5);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  &.sdm {
+    height: 400px;
+    width: 600px;
+    background: url('../assets/img/sdm/home.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.img:hover {
+  transform: scale(0.98);
+  border: 5px solid $orange;
+  transform: scale(0.98);
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+
+  &::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $orange_dark;
+    opacity: 0.8;
+  }
+}
+
+.sdm {
+  height: 400px;
+  width: 600px;
+  background: url('../assets/img/sdm/home.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.dulang {
+  height: 400px;
+  width: 600px;
+  background: url('../assets/img/dulang/Home.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.holistic {
+  height: 400px;
+  width: 600px;
+  background: url('../assets/img/holistic/Home.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#aboutme {
+  position: relative;
+  padding: 5rem 0 2rem 0;
+}
+
+#aboutme::before,
+#aboutme::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #ffffff;
+  bottom: -1em;
+  z-index: 1;
+}
+#aboutme::before {
+  right: 50%;
+  transform: skew(0, 20deg);
+}
+
+#aboutme::after {
+  left: 50%;
+  transform: skew(0, -20deg);
+}
+#projects {
+  padding: 5rem 0 2rem 0;
+  background: $blue;
+  .project-heading {
+    background-color: $orange;
+    padding: 10px 0;
+  }
+}
+
+#lamp {
+  height: 150px;
+  width: 150px;
+}
+
+#contact {
+  padding: 3rem 0 2rem 0;
+  .contact-header {
+    color: $blue;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+#building {
+  height: 300px;
+  width: 300px;
+}
