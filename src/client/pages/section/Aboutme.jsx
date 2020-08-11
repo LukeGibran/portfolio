@@ -9,12 +9,17 @@ const Aboutme = () => {
     <div id="aboutme">
       <div className="row">
         <div className="col l6 s12 center-align" style={{ marginTop: '70px' }}>
-          <img src={laptop} alt="laptop" className="laptopLogo " />
+          <img
+            src={laptop}
+            alt="laptop"
+            className="laptopLogo "
+            data-aos="fade-up"
+          />
 
-          <h3 className="myname">
+          <h3 className="myname" data-aos="fade-up" data-aos-delay="100">
             Liuk Jhivran <span className="orange-color"> Tulawie</span>
           </h3>
-          <h4>
+          <h4 data-aos="fade-up" data-aos-delay="200">
             <span className="orange-color">Web Developer </span>| Programmer
           </h4>
         </div>
@@ -26,6 +31,7 @@ const Aboutme = () => {
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
             className="blobLogo"
+            data-aos="fade-up"
           >
             <path
               fill="#1976D2"
@@ -33,7 +39,13 @@ const Aboutme = () => {
               transform="translate(100 100)"
             />
           </svg>
-          <img src={mypic} alt="my picture" className="mypic" />
+          <img
+            src={mypic}
+            alt="my picture"
+            className="mypic"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          />
         </div>
       </div>{' '}
     </div>

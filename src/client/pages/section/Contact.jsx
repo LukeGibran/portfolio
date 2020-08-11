@@ -7,13 +7,20 @@ const Contact = () => {
     <div className="row" id="contact">
       <div className="container">
         <div className="col s12 center-align">
-          <h3 className="contact-header">Contact Me</h3>
+          <h3 className="contact-header" data-aos="zoom-in">
+            Contact Me
+          </h3>
         </div>
         <div className="col l6 m12 s12 center-align">
-          <img src={Building} alt="building" id="building" />
+          <img
+            src={Building}
+            alt="building"
+            id="building"
+            data-aos="fade-right"
+          />
         </div>
         <div className="col l6 m12 s12 ">
-          <ul className="collection">
+          <ul className="collection" data-aos="fade-left">
             <li className="collection-item avatar">
               <i className="material-icons circle red">email</i>
               <span className="title">Email</span>

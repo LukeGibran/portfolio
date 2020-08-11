@@ -10,10 +10,15 @@ import Footer from './layouts/Footer';
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
+// AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const App = () => {
   // Initialize Materialize JS
   useEffect(() => {
     M.AutoInit();
+    AOS.init();
   }, []);
   return (
     <>
