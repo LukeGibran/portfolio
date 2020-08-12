@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Home from '../../../assets/img/dulang/Home.jpg';
 
@@ -9,8 +9,6 @@ import Order from '../../../assets/img/dulang/order.jpg';
 import Receipt from '../../../assets/img/dulang/receipt.jpg';
 
 const DulangModal = () => {
-  const [visible, setVisible] = useState(false);
-
   return (
     <div id="dulangModal" className="modal">
       <div className="modal-content ">

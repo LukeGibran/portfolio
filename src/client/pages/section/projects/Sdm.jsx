@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SdmModal from './SdmModal';
 
+// Materialize JS
+import M from 'materialize-css/dist/js/materialize.min.js';
+
 const SDM = () => {
+  useEffect(() => {
+    var elems = document.querySelectorAll('.modal');
+    M.Modal.init(elems, {});
+  }, []);
   return (
     <>
       <SdmModal />

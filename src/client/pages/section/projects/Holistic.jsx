@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HolisticModal from './HolistModal';
 
-import Home from '../../../assets/img/holistic/Home.png';
+// Materialize JS
+import M from 'materialize-css/dist/js/materialize.min.js';
 
 const Holistic = () => {
+  useEffect(() => {
+    var elems = document.querySelectorAll('.modal');
+    M.Modal.init(elems, {});
+  }, []);
   return (
     <>
       <HolisticModal />

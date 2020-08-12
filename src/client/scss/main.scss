@@ -13,6 +13,10 @@ $blue: #1976d2;
   color: $grey;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .mypic {
   height: 200px;
   width: 200px;
@@ -168,5 +172,5 @@ $blue: #1976d2;
 }
 
 .modal {
-  max-width: 100%;
+  max-width: 80% !important;
 }
