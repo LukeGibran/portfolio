@@ -1,10 +1,11 @@
-import React, { lazy } from 'react';
+import React from 'react';
 
 // Sections
 import Aboutme from './section/Aboutme';
-import Projects from './section/Projects';
-import Contact from './section/Contact';
 
+import Projects from './section/Projects';
+
+import Contact from './section/Contact';
 const Home = () => {
   return (
     <>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Images
-import mypic from '../../assets/img/me.png';
+import mypic from '../../assets/img/me.jpg';
 import laptop from '../../assets/img/laptop.svg';
 
 const Aboutme = () => {

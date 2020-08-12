@@ -1,10 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import './scss/main.scss';
 
 // Components
-import Home from './pages/Home';
-import Navbar from './layouts/Navbar';
-import Footer from './layouts/Footer';
+//import Navbar from './layouts/Navbar';
+//import Footer from './layouts/Footer';
+
+const Home = lazy(() => import('./pages/Home'));
+const Navbar = lazy(() => import('./layouts/Navbar'));
+const Footer = lazy(() => import('./layouts/Footer'));
+
+// Preloader
+import Preloader from './layouts/Preloader';
 
 // Materialize CSS
 import 'materialize-css/dist/css/materialize.min.css';
@@ -22,9 +28,13 @@ const App = () => {
   }, []);
   return (
     <>
-      <Navbar />
-      <Home />
-      <Footer />
+      <Suspense fallback={<Preloader component="App" />}>
+        <Navbar />
+
+        <Home />
+
+        <Footer />
+      </Suspense>
     </>
   );
 };

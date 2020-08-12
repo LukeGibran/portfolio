@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Home from '../../../assets/img/dulang/Home.jpg';
+
 import Event from '../../../assets/img/dulang/event.jpg';
+
 import Login from '../../../assets/img/dulang/login.jpg';
 import Order from '../../../assets/img/dulang/order.jpg';
 import Receipt from '../../../assets/img/dulang/receipt.jpg';
 
 const DulangModal = () => {
+  const [visible, setVisible] = useState(false);
+
   return (
     <div id="dulangModal" className="modal">
       <div className="modal-content ">
@@ -38,10 +42,10 @@ const DulangModal = () => {
         </p>
         <div className="center-align" style={{ marginTop: '15px' }}>
           <img src={Home} alt="home" className="modalImage" />
-          <img src={Event} alt="home" className="modalImage" />
-          <img src={Login} alt="home" className="modalImage" />
-          <img src={Order} alt="home" className="modalImage" />
-          <img src={Receipt} alt="home" className="modalImage" />
+          <img src={Event} alt="event" className="modalImage" />
+          <img src={Login} alt="login" className="modalImage" />
+          <img src={Order} alt="order" className="modalImage" />
+          <img src={Receipt} alt="receipt" className="modalImage" />
         </div>
       </div>
       <div className="modal-footer">
