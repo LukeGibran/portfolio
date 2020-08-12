@@ -171,6 +171,8 @@ body {
   width: 300px;
 }
 
-.modal {
-  max-width: 80% !important;
+@media only screen and (max-width: 992px) {
+  .modal {
+    width: 70% !important;
+  }
 }

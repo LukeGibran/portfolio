@@ -2,9 +2,6 @@ import React, { useEffect, lazy, Suspense } from 'react';
 import './scss/main.scss';
 
 // Components
-//import Navbar from './layouts/Navbar';
-//import Footer from './layouts/Footer';
-
 const Home = lazy(() => import('./pages/Home'));
 const Navbar = lazy(() => import('./layouts/Navbar'));
 const Footer = lazy(() => import('./layouts/Footer'));
