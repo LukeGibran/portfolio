@@ -14,13 +14,13 @@ const Projects = () => {
             Projects{' '}
           </h3>
         </div>
-        <div className="col l6 m12  s12">
+        <div className="col xl6 l8 offset-l2 m12  s12">
           <Dulang />
         </div>
-        <div className="col l6 m12  s12">
+        <div className="col xl6 l8 offset-l2 m12  s12">
           <Holistic />
         </div>
-        <div className="col l6 m12  s12">
+        <div className="col xl6 l8 offset-l2 m12  s12">
           <SDM />
         </div>
       </div>
