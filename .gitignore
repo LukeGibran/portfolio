@@ -1,4 +1,5 @@
 node_modules
+git
 *.log
 yarn.lock
 package-lock.json
