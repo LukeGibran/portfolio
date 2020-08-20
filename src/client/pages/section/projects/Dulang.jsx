@@ -12,7 +12,6 @@ const Dulang = () => {
   return (
     <>
       <DulangModal />
-
       <div className="center-align">
         <h4 className="white-text" data-aos="flip-down">
           Dulang Restaurant Management System
